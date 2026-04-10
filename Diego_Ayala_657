@@ -1,0 +1,88 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int menu;
+        int x;
+        int y;
+
+        do {
+            System.out.println("Consola para resolver tablas de multiplicación:\n" +
+                    "Selecciona del siguiente listado la tabla que deseas:\n" +
+                    "1. Tabla del 1\n" +
+                    "2. Tabla del 2\n" +
+                    "3. Tabla del 3\n" +
+                    "4. Tabla del 4\n" +
+                    "5. Tabla del 5\n" +
+                    "6. Tabla del 6\n" +
+                    "7. Tabla del 7\n" +
+                    "8. Tabla del 8\n" +
+                    "9. Tabla del 9\n" +
+                    "10. Tabla del 10\n" +
+                    "11. Salir");
+
+            System.out.print("Ingresa una opción: ");
+            menu = sc.nextInt();
+
+            switch (menu) {
+                case 1:
+                    for (y = 1, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 2:
+                    for (y = 2, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 3:
+                    for (y = 3, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 4:
+                    for (y = 4, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 5:
+                    for (y = 5, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 6:
+                    for (y = 6, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 7:
+                    for (y = 7, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 8:
+                    for (y = 8, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 9:
+                    for (y = 9, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 10:
+                    for (y = 10, x = 1; x <= 10; x++) {
+                        System.out.println(y + " x " + x + " = " + (y * x));
+                    }
+                    break;
+                case 11:
+                    System.out.println("Salir");
+                    break;
+                default:
+                    System.out.println("Seleccione una opción válida");
+                    break;
+            }
+        } while (menu != 11);
+    }
+}
